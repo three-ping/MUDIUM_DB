@@ -137,7 +137,7 @@ CREATE TABLE `TBL_PERFORMANCE`
     `region`    VARCHAR(255) NOT NULL COMMENT '공연 지역',
     `start_date`    TIMESTAMP NOT NULL COMMENT '공연시작일',
     `end_date`    TIMESTAMP COMMENT '공연종료일',
-    `runtime`    TIMESTAMP NOT NULL COMMENT '공연 시간',
+    `runtime`    VARCHAR(255) NOT NULL COMMENT '공연 시간',
     `theater`    VARCHAR(255) NOT NULL COMMENT '극장 이름',
     `actor_list`    VARCHAR(1023) NOT NULL COMMENT '배우 명단',
     `musical_info_id`    BIGINT COMMENT '뮤지컬 ID',
