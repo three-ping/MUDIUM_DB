@@ -24,21 +24,25 @@ DROP TABLE IF EXISTS `TBL_CUSTOM_TICKET`;
 DROP TABLE IF EXISTS `TBL_MUSICAL_INFO`;
 DROP TABLE IF EXISTS `TBL_USER`;
 
-CREATE TABLE `TBL_USER`
-(
-    `user_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '회원ID',
-    `name`    VARCHAR(1023) NOT NULL COMMENT '회원명',
-    `email`    VARCHAR(1023) NOT NULL COMMENT '이메일',
-    `status`    VARCHAR(255) NOT NULL COMMENT '회원상태',
-    `created_at`    TIMESTAMP NOT NULL COMMENT '회원가입시각',
-    `acception_status`    VARCHAR(255) COMMENT '14세이상동의여부',
-    `signup_path`    VARCHAR(255) COMMENT '가입경로',
-    `nickname`    VARCHAR(1023) NOT NULL COMMENT '닉네임',
-    `password`    VARCHAR(1023) COMMENT '비밀번호',
-    `deleted_at`    TIMESTAMP COMMENT '회원탈퇴시각',
- PRIMARY KEY (`user_id`)
-)
- COMMENT = '회원';
+CREATE TABLE TBL_USER (
+                          user_id BIGINT(20) NOT NULL AUTO_INCREMENT,
+                          user_auth_id VARCHAR(255) NOT NULL,  -- 일반 로그인 ID 또는 소셜 로그인 고유번호
+                          user_name VARCHAR(255) NOT NULL,
+                          password VARCHAR(255),
+                          nickname VARCHAR(255),
+                          email VARCHAR(255),
+                          user_status VARCHAR(255) NOT NULL DEFAULT 'ACTIVE' CHECK(user_status IN ('ACTIVE','INACTIVE')),
+                          created_at TIMESTAMP,
+                          withdrawn_at TIMESTAMP,
+                          profile_image TEXT,
+                          accept_status VARCHAR(255) NOT NULL DEFAULT 'N' CHECK(accept_status IN ('Y','N')),
+                          signup_path VARCHAR(255) CHECK (signup_path IN ('KAKAO','NAVER','GOOGLE','NORMAL')),  -- 가입 경로는 KAKAO,NAVER,GOOGLE,NORMAL
+                          user_identifier VARCHAR(511) NOT NULL,  -- 신규 추가, 가입 경로 + ID(or 고유번호)
+                          user_role VARCHAR(256) NOT NULL,
+                          PRIMARY KEY (user_id),
+                          UNIQUE KEY unique_user_identifier (user_identifier)  -- 유니크 인덱스 추가
+) ENGINE=INNODB AUTO_INCREMENT=1 COMMENT='회원' DEFAULT CHARSET=UTF8;
+
 
 CREATE TABLE `TBL_MUSICAL_INFO`
 (
