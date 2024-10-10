@@ -26,7 +26,7 @@ DROP TABLE IF EXISTS `TBL_USER`;
 
 CREATE TABLE `TBL_USER`
 (
-    `user_id`    BIGINT NOT NULL COMMENT '회원ID',
+    `user_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '회원ID',
     `name`    VARCHAR(1023) NOT NULL COMMENT '회원명',
     `email`    VARCHAR(1023) NOT NULL COMMENT '이메일',
     `status`    VARCHAR(255) NOT NULL COMMENT '회원상태',
@@ -42,7 +42,7 @@ CREATE TABLE `TBL_USER`
 
 CREATE TABLE `TBL_MUSICAL_INFO`
 (
-    `musical_info_id`    BIGINT NOT NULL COMMENT '뮤지컬ID',
+    `musical_info_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '뮤지컬ID',
     `title`    VARCHAR(1023) NOT NULL COMMENT '뮤지컬제목',
     `image_url`    VARCHAR(1023) NOT NULL COMMENT '포스터',
     `rating`    VARCHAR(255) NOT NULL COMMENT '관람등급',
@@ -53,7 +53,7 @@ CREATE TABLE `TBL_MUSICAL_INFO`
 
 CREATE TABLE `TBL_CUSTOM_TICKET`
 (
-    `custom_ticket_id`    BIGINT NOT NULL COMMENT '커스텀티켓ID',
+    `custom_ticket_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '커스텀티켓ID',
     `ticket_image`    VARCHAR(1023) NOT NULL COMMENT '티켓이미지',
     `theme_name`    VARCHAR(1023) NOT NULL COMMENT '테마이름',
     `musical_info_id`    BIGINT COMMENT '뮤지컬ID',
@@ -64,7 +64,7 @@ CREATE TABLE `TBL_CUSTOM_TICKET`
 
 CREATE TABLE `TBL_BOARD`
 (
-    `board_id`    BIGINT NOT NULL COMMENT '자유게시글ID',
+    `board_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '자유게시글ID',
     `title`    VARCHAR(1023) NOT NULL COMMENT '제목',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성일자',
@@ -80,7 +80,7 @@ CREATE TABLE `TBL_BOARD`
 
 CREATE TABLE `TBL_INQUIRY`
 (
-    `inquiry_id`    BIGINT NOT NULL COMMENT '문의게시글ID',
+    `inquiry_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '문의게시글ID',
     `title`    VARCHAR(1023) NOT NULL COMMENT '문의게시글제목',
     `content`    TEXT NOT NULL COMMENT '문의게시글내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '문의게시글작성일자',
@@ -93,7 +93,7 @@ CREATE TABLE `TBL_INQUIRY`
 
 CREATE TABLE `TBL_NOTICE`
 (
-    `notice_id`    BIGINT NOT NULL COMMENT '공지게시글ID',
+    `notice_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '공지게시글ID',
     `title`    VARCHAR(255) NOT NULL COMMENT '공지게시글제목',
     `content`    TEXT NOT NULL COMMENT '공지게시글내용',
     `craeted_at`    TIMESTAMP NOT NULL COMMENT '공지게시글작성일자',
@@ -107,7 +107,7 @@ CREATE TABLE `TBL_NOTICE`
 
 CREATE TABLE `TBL_ETIQUETTE`
 (
-    `etiquette_id`    BIGINT NOT NULL COMMENT '관람 매너ID',
+    `etiquette_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '관람 매너ID',
     `etiquette`    VARCHAR(1023) NOT NULL COMMENT '관람 매너',
     `etiquette_description`    TEXT NOT NULL COMMENT '관람 매너 설명',
     `created_at`    TIMESTAMP NOT NULL COMMENT '관람 매너 작성일자',
@@ -120,7 +120,7 @@ CREATE TABLE `TBL_ETIQUETTE`
 
 CREATE TABLE `TBL_RECOMMENDED_MUSICAL`
 (
-    `recommended_musical_id`    BIGINT NOT NULL COMMENT '추천뮤지컬ID',
+    `recommended_musical_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '추천뮤지컬ID',
     `title`    VARCHAR(1023) NOT NULL COMMENT '뮤지컬제목',
     `content`    TEXT NOT NULL COMMENT '뮤지컬내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '뮤지컬추천작성일자',
@@ -133,7 +133,7 @@ CREATE TABLE `TBL_RECOMMENDED_MUSICAL`
 
 CREATE TABLE `TBL_PERFORMANCE`
 (
-    `performance_id`    BIGINT NOT NULL COMMENT '공연ID',
+    `performance_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '공연ID',
     `region`    VARCHAR(255) NOT NULL COMMENT '공연 지역',
     `start_date`    TIMESTAMP NOT NULL COMMENT '공연시작일',
     `end_date`    TIMESTAMP COMMENT '공연종료일',
@@ -148,7 +148,7 @@ CREATE TABLE `TBL_PERFORMANCE`
 
 CREATE TABLE `TBL_REVIEW`
 (
-    `review_id`    BIGINT NOT NULL COMMENT '리뷰ID',
+    `review_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '리뷰ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성 시각',
     `updated_at`    TIMESTAMP COMMENT '수정 시각',
@@ -177,7 +177,7 @@ CREATE TABLE `TBL_SCOPE`
 
 CREATE TABLE `TBL_BOARD_COMMENT`
 (
-    `board_comment_id`    BIGINT NOT NULL COMMENT '댓글ID',
+    `board_comment_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '댓글ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성시각',
     `active_status`    VARCHAR(255) NOT NULL COMMENT '활성화상태',
@@ -202,7 +202,7 @@ CREATE TABLE `TBL_BOARD_LIKE`
 
 CREATE TABLE `TBL_BOARD_REPLY`
 (
-    `board_reply_id`    BIGINT NOT NULL COMMENT '대댓글ID',
+    `board_reply_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '대댓글ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성시각',
     `active_status`    VARCHAR(255) NOT NULL COMMENT '활성화상태',
@@ -226,7 +226,7 @@ CREATE TABLE `TBL_BOOKMARK`
 
 CREATE TABLE `TBL_CALENDAR_THEME`
 (
-    `calendar_theme_id`    BIGINT NOT NULL COMMENT '캘린더ID',
+    `calendar_theme_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '캘린더ID',
     `path`    VARCHAR(1023) NOT NULL COMMENT '캘린더테마경로',
     `user_id`    BIGINT COMMENT '회원ID',
     `musical_info_id`    BIGINT COMMENT '뮤지컬ID',
@@ -238,7 +238,7 @@ CREATE TABLE `TBL_CALENDAR_THEME`
 
 CREATE TABLE `TBL_INQUIRY_COMMENT`
 (
-    `inquiry_comment_id`    BIGINT NOT NULL COMMENT '문의댓글ID',
+    `inquiry_comment_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '문의댓글ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성시각',
     `updated_at`    TIMESTAMP COMMENT '수정시각',
@@ -252,7 +252,7 @@ CREATE TABLE `TBL_INQUIRY_COMMENT`
 
 CREATE TABLE `TBL_MUSICAL_BOARD`
 (
-    `musical_board_id`    BIGINT NOT NULL COMMENT '뮤지컬게시글ID',
+    `musical_board_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '뮤지컬게시글ID',
     `title`    VARCHAR(1023) NOT NULL COMMENT '뮤지컬게시글제목',
     `content`    TEXT NOT NULL COMMENT '뮤지컬게시글내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '뮤지컬게시글 작성일자',
@@ -270,7 +270,7 @@ CREATE TABLE `TBL_MUSICAL_BOARD`
 
 CREATE TABLE `TBL_MUSICAL_BOARD_COMMENT`
 (
-    `musical_board_comment_id`    BIGINT NOT NULL COMMENT '뮤지컬 댓글ID',
+    `musical_board_comment_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '뮤지컬 댓글ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성시각',
     `updated_at`    TIMESTAMP COMMENT '수정시각',
@@ -295,7 +295,7 @@ CREATE TABLE `TBL_MUSICAL_BOARD_LIKE`
 
 CREATE TABLE `TBL_MUSICAL_BOARD_REPLY`
 (
-    `musical_board_reply_id`    BIGINT NOT NULL COMMENT '뮤지컬 대댓글ID',
+    `musical_board_reply_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '뮤지컬 대댓글ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '생성시각',
     `updated_at`    TIMESTAMP COMMENT '수정시각',
@@ -310,7 +310,7 @@ CREATE TABLE `TBL_MUSICAL_BOARD_REPLY`
 
 CREATE TABLE `TBL_REVIEW_COMMENT`
 (
-    `review_comment_id`    BIGINT NOT NULL COMMENT '리뷰댓글ID',
+    `review_comment_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '리뷰댓글ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성 시각',
     `updated_at`    TIMESTAMP COMMENT '수정 시각',
@@ -335,7 +335,7 @@ CREATE TABLE `TBL_REVIEW_LIKE`
 
 CREATE TABLE `TBL_SECRET_REVIEW`
 (
-    `secret_review_id`    BIGINT NOT NULL COMMENT '비밀리뷰ID',
+    `secret_review_id`    BIGINT NOT NULL AUTO_INCREMENT COMMENT '비밀리뷰ID',
     `content`    TEXT NOT NULL COMMENT '내용',
     `created_at`    TIMESTAMP NOT NULL COMMENT '작성 시각',
     `updated_at`    TIMESTAMP COMMENT '수정 시각',
