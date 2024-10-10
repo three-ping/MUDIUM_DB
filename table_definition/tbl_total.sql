@@ -154,8 +154,8 @@ CREATE TABLE TBL_MUSICAL_TERMS
     `updated_at`               TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일자',
     `user_id`                  BIGINT COMMENT '회원ID',
     PRIMARY KEY (`musical_terms_id`),
-    CONSTRAINT fk_etiquette_user FOREIGN KEY (`user_id`) REFERENCES `TBL_USER` (`user_id`)
-) COMMENT = '관람 매너';
+    CONSTRAINT fk_musical_terms_user FOREIGN KEY (`user_id`) REFERENCES `TBL_USER` (`user_id`)
+) COMMENT = '뮤지컬 용어';
 
 CREATE TABLE `TBL_REVIEW`
 (
