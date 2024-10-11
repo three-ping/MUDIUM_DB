@@ -50,9 +50,9 @@ CREATE TABLE `TBL_MUSICAL_INFO`
 (
     `musical_info_id` BIGINT        NOT NULL AUTO_INCREMENT COMMENT '뮤지컬ID',
     `title`           VARCHAR(1023) NOT NULL COMMENT '뮤지컬제목',
-    `image_url`       VARCHAR(1023) NOT NULL COMMENT '포스터',
-    `rating`          VARCHAR(255)  NOT NULL COMMENT '관람등급',
-    `view_count`      BIGINT        NOT NULL COMMENT '조회 수',
+    `image_url`       VARCHAR(1023) COMMENT '포스터',
+    `rating`          VARCHAR(255)  COMMENT '관람등급',
+    `view_count`      BIGINT        COMMENT '조회 수',
     `review_video`    TEXT COMMENT '리뷰 영상',
     PRIMARY KEY (`musical_info_id`)
 ) COMMENT = '뮤지컬 정보';
