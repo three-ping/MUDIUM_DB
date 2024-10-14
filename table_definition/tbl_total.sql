@@ -75,7 +75,7 @@ CREATE TABLE `TBL_BOARD`
     `created_at`    TIMESTAMP     NOT NULL COMMENT '작성일자',
     `updated_at`    TIMESTAMP COMMENT '수정일자',
     `view_count`    BIGINT        NOT NULL COMMENT '조회수',
-    `like`          BIGINT        NOT NULL COMMENT '좋아요',
+    `board_like`          BIGINT        NOT NULL COMMENT '좋아요',
     `active_status` VARCHAR(255)  NOT NULL COMMENT '활성화상태',
     `user_id`       BIGINT COMMENT '회원ID',
     PRIMARY KEY (`board_id`),
