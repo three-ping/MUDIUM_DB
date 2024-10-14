@@ -54,6 +54,7 @@ CREATE TABLE `TBL_MUSICAL_INFO`
     `rating`          VARCHAR(255)  COMMENT '관람등급',
     `view_count`      BIGINT        COMMENT '조회 수',
     `review_video`    TEXT COMMENT '리뷰 영상',
+    `production`      VARCHAR(255)  COMMENT '제작사',
     PRIMARY KEY (`musical_info_id`)
 ) COMMENT = '뮤지컬 정보';
 
@@ -140,6 +141,7 @@ CREATE TABLE `TBL_PERFORMANCE`
     `runtime`         VARCHAR(255)  NOT NULL COMMENT '공연 시간',
     `theater`         VARCHAR(255)  NOT NULL COMMENT '극장 이름',
     `actor_list`      VARCHAR(1023) NOT NULL COMMENT '배우 명단',
+    `poster`          VARCHAR(1023) COMMENT '공연 포스터',
     `musical_info_id` BIGINT COMMENT '뮤지컬 ID',
     PRIMARY KEY (`performance_id`),
     CONSTRAINT fk_performance_musical FOREIGN KEY (`musical_info_id`) REFERENCES `TBL_MUSICAL_INFO` (`musical_info_id`)
