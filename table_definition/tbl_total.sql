@@ -179,6 +179,7 @@ CREATE TABLE `TBL_SCOPE`
     `scope`           TINYINT   NOT NULL COMMENT '별점',
     `created_at`      TIMESTAMP NOT NULL COMMENT '별점 작성시각',
     `updated_at`      TIMESTAMP COMMENT '별점 수정시각',
+    `user_nickname`    VARCHAR(255) NOT NULL COMMENT '유저닉네임',
     PRIMARY KEY (`user_id`, `musical_info_id`),
     CONSTRAINT fk_scope_user FOREIGN KEY (`user_id`) REFERENCES `TBL_USER` (`user_id`),
     CONSTRAINT fk_scope_musical FOREIGN KEY (`musical_info_id`) REFERENCES `TBL_MUSICAL_INFO` (`musical_info_id`)
