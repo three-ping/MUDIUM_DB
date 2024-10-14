@@ -55,6 +55,7 @@ CREATE TABLE `TBL_MUSICAL_INFO`
     `view_count`      BIGINT        COMMENT '조회 수',
     `review_video`    TEXT COMMENT '리뷰 영상',
     `production`      VARCHAR(255)  COMMENT '제작사',
+    `synopsys`        TEXT COMMENT '시놉시스',
     PRIMARY KEY (`musical_info_id`)
 ) COMMENT = '뮤지컬 정보';
 
