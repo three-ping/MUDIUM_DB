@@ -101,7 +101,7 @@ CREATE TABLE `TBL_NOTICE`
     `notice_id`  BIGINT       NOT NULL AUTO_INCREMENT COMMENT '공지게시글ID',
     `title`      VARCHAR(255) NOT NULL COMMENT '공지게시글제목',
     `content`    TEXT         NOT NULL COMMENT '공지게시글내용',
-    `craeted_at` TIMESTAMP    NOT NULL COMMENT '공지게시글작성일자',
+    `created_at` TIMESTAMP    NOT NULL COMMENT '공지게시글작성일자',
     `updated_at` TIMESTAMP COMMENT '공지게시글수정일자',
     `view_count` BIGINT       NOT NULL COMMENT '공지게시글조회수',
     `user_id`    BIGINT COMMENT '회원ID',
