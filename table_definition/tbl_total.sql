@@ -218,6 +218,7 @@ CREATE TABLE `TBL_BOARD_REPLY`
     `board_reply_id`   BIGINT       NOT NULL AUTO_INCREMENT COMMENT '대댓글ID',
     `content`          TEXT         NOT NULL COMMENT '내용',
     `created_at`       TIMESTAMP    NOT NULL COMMENT '작성시각',
+    `updated_at`   TIMESTAMP  COMMENT '수정시각',
     `active_status`    VARCHAR(255) NOT NULL COMMENT '활성화상태',
     `board_comment_id` BIGINT COMMENT '댓글ID',
     `user_id`          BIGINT COMMENT '회원ID',
