@@ -1,4 +1,4 @@
-INSERT INTO `TBL_NOTICE` (`title`, `content`, `craeted_at`, `updated_at`, `view_count`, `user_id`)
+INSERT INTO `TBL_NOTICE` (`title`, `content`, `created_at`, `updated_at`, `view_count`, `user_id`)
 VALUES
 ('공지사항 1', '공지사항 내용 1', NOW() - INTERVAL 30 DAY, NOW() - INTERVAL 30 DAY, 100, 1),
 ('공지사항 2', '공지사항 내용 2', NOW() - INTERVAL 29 DAY, NOW() - INTERVAL 29 DAY, 120, 1),

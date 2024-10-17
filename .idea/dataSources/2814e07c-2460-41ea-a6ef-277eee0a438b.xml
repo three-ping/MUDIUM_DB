@@ -1416,7 +1416,7 @@ sgmadb|schema||sgma||UPDATE|G</Grants>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="510" parent="1" name="mudiumdb">
-      <LastIntrospectionLocalTimestamp>2024-10-10.01:49:20</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-17.02:21:40</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="511" parent="1" name="mysql">
@@ -1449,109 +1449,1732 @@ sgmadb|schema||sgma||UPDATE|G</Grants>
     </user>
     <user id="521" parent="1" name="sgma"/>
     <user id="522" parent="1" name="swcamp"/>
-    <table id="523" parent="510" name="tbl_user">
+    <table id="523" parent="510" name="tbl_board">
+      <Comment>자유게시글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="524" parent="510" name="tbl_board_comment">
+      <Comment>자유게시글댓글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="525" parent="510" name="tbl_board_like">
+      <Comment>자유게시글좋아요</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="526" parent="510" name="tbl_board_reply">
+      <Comment>자유게시글대댓글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="527" parent="510" name="tbl_bookmark">
+      <Comment>북마크</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="528" parent="510" name="tbl_calendar_theme">
+      <Comment>캘린더 테마</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="529" parent="510" name="tbl_custom_ticket">
+      <Comment>커스텀티켓</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="530" parent="510" name="tbl_etiquette">
+      <Comment>관람 매너</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="531" parent="510" name="tbl_inquiry">
+      <Comment>문의게시글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="532" parent="510" name="tbl_inquiry_comment">
+      <Comment>문의게시글댓글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="533" parent="510" name="tbl_musical_board">
+      <Comment>뮤지컬게시글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="534" parent="510" name="tbl_musical_board_comment">
+      <Comment>뮤지컬 게시글 댓글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="535" parent="510" name="tbl_musical_board_like">
+      <Comment>뮤지컬게시글좋아요</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="536" parent="510" name="tbl_musical_board_reply">
+      <Comment>뮤지컬대댓글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="537" parent="510" name="tbl_musical_info">
+      <Comment>뮤지컬 정보</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="538" parent="510" name="tbl_musical_terms">
+      <Comment>뮤지컬 용어</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="539" parent="510" name="tbl_notice">
+      <Comment>공지게시글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="540" parent="510" name="tbl_performance">
+      <Comment>공연정보</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="541" parent="510" name="tbl_recommended_musical">
+      <Comment>추천 뮤지컬</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="542" parent="510" name="tbl_review">
+      <Comment>리뷰</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="543" parent="510" name="tbl_review_comment">
+      <Comment>리뷰 댓글</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="544" parent="510" name="tbl_review_like">
+      <Comment>리뷰좋아요</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="545" parent="510" name="tbl_scope">
+      <Comment>별점</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="546" parent="510" name="tbl_secret_review">
+      <Comment>비밀리뷰</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="547" parent="510" name="tbl_user">
       <Comment>회원</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <check id="524" parent="523" name="accept_status">
+    <table id="548" parent="510" name="tbl_user_custom_ticket">
+      <Comment>회원커스텀티켓</Comment>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="549" parent="523" name="board_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>자유게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="550" parent="523" name="title">
+      <Comment>제목</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="551" parent="523" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="552" parent="523" name="created_at">
+      <Comment>작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="553" parent="523" name="updated_at">
+      <Comment>수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="554" parent="523" name="view_count">
+      <Comment>조회수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="555" parent="523" name="board_like">
+      <Comment>좋아요</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="556" parent="523" name="comments">
+      <Comment>댓글수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="557" parent="523" name="active_status">
+      <Comment>활성화상태</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="558" parent="523" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>10</Position>
+    </column>
+    <foreign-key id="559" parent="523" name="fk_board_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="560" parent="523" name="PRIMARY">
+      <ColNames>board_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="561" parent="523" name="fk_board_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="562" parent="523" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="563" parent="524" name="board_comment_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="564" parent="524" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="565" parent="524" name="created_at">
+      <Comment>작성시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="566" parent="524" name="active_status">
+      <Comment>활성화상태</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="567" parent="524" name="updated_at">
+      <Comment>수정시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="568" parent="524" name="replys">
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="569" parent="524" name="board_id">
+      <Comment>자유게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="570" parent="524" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="571" parent="524" name="fk_board_comment_board">
+      <ColNames>board_id</ColNames>
+      <RefColNames>board_id</RefColNames>
+      <RefTableName>tbl_board</RefTableName>
+    </foreign-key>
+    <foreign-key id="572" parent="524" name="fk_board_comment_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="573" parent="524" name="PRIMARY">
+      <ColNames>board_comment_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="574" parent="524" name="fk_board_comment_board">
+      <ColNames>board_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="575" parent="524" name="fk_board_comment_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="576" parent="524" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="577" parent="525" name="board_id">
+      <Comment>자유게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="578" parent="525" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="579" parent="525" name="fk_board_like_board">
+      <ColNames>board_id</ColNames>
+      <RefColNames>board_id</RefColNames>
+      <RefTableName>tbl_board</RefTableName>
+    </foreign-key>
+    <foreign-key id="580" parent="525" name="fk_board_like_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="581" parent="525" name="PRIMARY">
+      <ColNames>board_id
+user_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="582" parent="525" name="fk_board_like_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="583" parent="525" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="584" parent="526" name="board_reply_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>대댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="585" parent="526" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="586" parent="526" name="created_at">
+      <Comment>작성시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="587" parent="526" name="active_status">
+      <Comment>활성화상태</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="588" parent="526" name="board_comment_id">
+      <Comment>댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="589" parent="526" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="590" parent="526" name="fk_board_reply_comment">
+      <ColNames>board_comment_id</ColNames>
+      <RefColNames>board_comment_id</RefColNames>
+      <RefTableName>tbl_board_comment</RefTableName>
+    </foreign-key>
+    <foreign-key id="591" parent="526" name="fk_board_reply_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="592" parent="526" name="PRIMARY">
+      <ColNames>board_reply_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="593" parent="526" name="fk_board_reply_comment">
+      <ColNames>board_comment_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="594" parent="526" name="fk_board_reply_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="595" parent="526" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="596" parent="527" name="musical_info_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="597" parent="527" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="598" parent="527" name="fk_bookmark_musical">
+      <ColNames>musical_info_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <foreign-key id="599" parent="527" name="fk_bookmark_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="600" parent="527" name="PRIMARY">
+      <ColNames>musical_info_id
+user_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="601" parent="527" name="fk_bookmark_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="602" parent="527" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="603" parent="528" name="calendar_theme_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>캘린더ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="604" parent="528" name="path">
+      <Comment>캘린더테마경로</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="605" parent="528" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="606" parent="528" name="musical_info_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="607" parent="528" name="fk_calendar_theme_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <foreign-key id="608" parent="528" name="fk_calendar_theme_musical">
+      <ColNames>musical_info_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <index id="609" parent="528" name="PRIMARY">
+      <ColNames>calendar_theme_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="610" parent="528" name="fk_calendar_theme_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="611" parent="528" name="fk_calendar_theme_musical">
+      <ColNames>musical_info_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="612" parent="528" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="613" parent="529" name="custom_ticket_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>커스텀티켓ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="614" parent="529" name="ticket_image">
+      <Comment>티켓이미지</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="615" parent="529" name="theme_name">
+      <Comment>테마이름</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="616" parent="529" name="musical_info_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="617" parent="529" name="fk_custom_ticket_musical">
+      <ColNames>musical_info_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <index id="618" parent="529" name="PRIMARY">
+      <ColNames>custom_ticket_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="619" parent="529" name="fk_custom_ticket_musical">
+      <ColNames>musical_info_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="620" parent="529" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="621" parent="530" name="etiquette_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>관람 매너ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="622" parent="530" name="etiquette">
+      <Comment>관람 매너</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="623" parent="530" name="etiquette_description">
+      <Comment>관람 매너 설명</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="624" parent="530" name="created_at">
+      <Comment>관람 매너 작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="625" parent="530" name="updated_at">
+      <Comment>관람 매너 수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="626" parent="530" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="627" parent="530" name="fk_etiquette_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="628" parent="530" name="PRIMARY">
+      <ColNames>etiquette_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="629" parent="530" name="fk_etiquette_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="630" parent="530" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="631" parent="531" name="inquiry_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>문의게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="632" parent="531" name="title">
+      <Comment>문의게시글제목</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="633" parent="531" name="content">
+      <Comment>문의게시글내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="634" parent="531" name="created_at">
+      <Comment>문의게시글작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="635" parent="531" name="updated_at">
+      <Comment>문의게시글수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="636" parent="531" name="comments">
+      <Comment>댓글수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="637" parent="531" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="638" parent="531" name="fk_inquiry_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="639" parent="531" name="PRIMARY">
+      <ColNames>inquiry_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="640" parent="531" name="fk_inquiry_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="641" parent="531" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="642" parent="532" name="inquiry_comment_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>문의댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="643" parent="532" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="644" parent="532" name="created_at">
+      <Comment>작성시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="645" parent="532" name="updated_at">
+      <Comment>수정시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="646" parent="532" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="647" parent="532" name="inquiry_id">
+      <Comment>문의게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="648" parent="532" name="fk_inquiry_comment_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <foreign-key id="649" parent="532" name="fk_inquiry_comment_inquiry">
+      <ColNames>inquiry_id</ColNames>
+      <RefColNames>inquiry_id</RefColNames>
+      <RefTableName>tbl_inquiry</RefTableName>
+    </foreign-key>
+    <index id="650" parent="532" name="PRIMARY">
+      <ColNames>inquiry_comment_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="651" parent="532" name="fk_inquiry_comment_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="652" parent="532" name="fk_inquiry_comment_inquiry">
+      <ColNames>inquiry_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="653" parent="532" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="654" parent="533" name="musical_board_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>뮤지컬게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="655" parent="533" name="title">
+      <Comment>뮤지컬게시글제목</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="656" parent="533" name="content">
+      <Comment>뮤지컬게시글내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="657" parent="533" name="created_at">
+      <Comment>뮤지컬게시글 작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="658" parent="533" name="updated_at">
+      <Comment>뮤지컬게시글 수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="659" parent="533" name="view_count">
+      <Comment>뮤지컬게시글 조회수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="660" parent="533" name="like">
+      <Comment>뮤지컬게시글 좋아요</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="661" parent="533" name="comments">
+      <Comment>댓글수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="662" parent="533" name="active_status">
+      <Comment>활성화 여부</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="663" parent="533" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>10</Position>
+    </column>
+    <column id="664" parent="533" name="musical_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>11</Position>
+    </column>
+    <foreign-key id="665" parent="533" name="fk_musical_board_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <foreign-key id="666" parent="533" name="fk_musical_board_musical">
+      <ColNames>musical_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <index id="667" parent="533" name="PRIMARY">
+      <ColNames>musical_board_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="668" parent="533" name="fk_musical_board_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="669" parent="533" name="fk_musical_board_musical">
+      <ColNames>musical_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="670" parent="533" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="671" parent="534" name="musical_board_comment_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>뮤지컬 댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="672" parent="534" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="673" parent="534" name="created_at">
+      <Comment>작성시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="674" parent="534" name="updated_at">
+      <Comment>수정시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="675" parent="534" name="active_status">
+      <Comment>활성화여부</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="676" parent="534" name="replys">
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="677" parent="534" name="musical_board_id">
+      <Comment>뮤지컬게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="678" parent="534" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="679" parent="534" name="fk_musical_board_comment_board">
+      <ColNames>musical_board_id</ColNames>
+      <RefColNames>musical_board_id</RefColNames>
+      <RefTableName>tbl_musical_board</RefTableName>
+    </foreign-key>
+    <foreign-key id="680" parent="534" name="fk_musical_board_comment_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="681" parent="534" name="PRIMARY">
+      <ColNames>musical_board_comment_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="682" parent="534" name="fk_musical_board_comment_board">
+      <ColNames>musical_board_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="683" parent="534" name="fk_musical_board_comment_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="684" parent="534" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="685" parent="535" name="musical_board_id">
+      <Comment>뮤지컬게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="686" parent="535" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="687" parent="535" name="fk_musical_board_like_board">
+      <ColNames>musical_board_id</ColNames>
+      <RefColNames>musical_board_id</RefColNames>
+      <RefTableName>tbl_musical_board</RefTableName>
+    </foreign-key>
+    <foreign-key id="688" parent="535" name="fk_musical_board_like_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="689" parent="535" name="PRIMARY">
+      <ColNames>musical_board_id
+user_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="690" parent="535" name="fk_musical_board_like_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="691" parent="535" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="692" parent="536" name="musical_board_reply_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>뮤지컬 대댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="693" parent="536" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="694" parent="536" name="created_at">
+      <Comment>생성시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="695" parent="536" name="updated_at">
+      <Comment>수정시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="696" parent="536" name="active_status">
+      <Comment>활성화상태</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="697" parent="536" name="musical_board_comment_id">
+      <Comment>뮤지컬 댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="698" parent="536" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="699" parent="536" name="fk_musical_reply_comment">
+      <ColNames>musical_board_comment_id</ColNames>
+      <RefColNames>musical_board_comment_id</RefColNames>
+      <RefTableName>tbl_musical_board_comment</RefTableName>
+    </foreign-key>
+    <foreign-key id="700" parent="536" name="fk_musical_reply_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="701" parent="536" name="PRIMARY">
+      <ColNames>musical_board_reply_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="702" parent="536" name="fk_musical_reply_comment">
+      <ColNames>musical_board_comment_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="703" parent="536" name="fk_musical_reply_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="704" parent="536" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="705" parent="537" name="musical_info_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="706" parent="537" name="title">
+      <Comment>뮤지컬제목</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="707" parent="537" name="image_url">
+      <Comment>포스터</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="708" parent="537" name="rating">
+      <Comment>관람등급</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="709" parent="537" name="view_count">
+      <Comment>조회 수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="710" parent="537" name="review_video">
+      <Comment>리뷰 영상</Comment>
+      <DasType>text|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="711" parent="537" name="production">
+      <Comment>제작사</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="712" parent="537" name="synopsys">
+      <Comment>시놉시스</Comment>
+      <DasType>text|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <index id="713" parent="537" name="PRIMARY">
+      <ColNames>musical_info_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="714" parent="537" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="715" parent="538" name="musical_terms_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>뮤지컬 용어ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="716" parent="538" name="musical_terms">
+      <Comment>뮤지컬 용어</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="717" parent="538" name="musical_terms_definition">
+      <Comment>뮤지컬 용어 정의</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="718" parent="538" name="created_at">
+      <Comment>작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="719" parent="538" name="updated_at">
+      <Comment>수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <OnUpdate>current_timestamp()</OnUpdate>
+      <Position>5</Position>
+    </column>
+    <column id="720" parent="538" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="721" parent="538" name="fk_musical_terms_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="722" parent="538" name="PRIMARY">
+      <ColNames>musical_terms_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="723" parent="538" name="fk_musical_terms_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="724" parent="538" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="725" parent="539" name="notice_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>공지게시글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="726" parent="539" name="title">
+      <Comment>공지게시글제목</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="727" parent="539" name="content">
+      <Comment>공지게시글내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="728" parent="539" name="created_at">
+      <Comment>공지게시글작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="729" parent="539" name="updated_at">
+      <Comment>공지게시글수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="730" parent="539" name="view_count">
+      <Comment>공지게시글조회수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="731" parent="539" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="732" parent="539" name="fk_notice_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="733" parent="539" name="PRIMARY">
+      <ColNames>notice_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="734" parent="539" name="fk_notice_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="735" parent="539" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="736" parent="540" name="performance_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>공연ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="737" parent="540" name="region">
+      <Comment>공연 지역</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="738" parent="540" name="start_date">
+      <Comment>공연시작일</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="739" parent="540" name="end_date">
+      <Comment>공연종료일</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="740" parent="540" name="runtime">
+      <Comment>공연 시간</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="741" parent="540" name="theater">
+      <Comment>극장 이름</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="742" parent="540" name="actor_list">
+      <Comment>배우 명단</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="743" parent="540" name="poster">
+      <Comment>공연 포스터</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="744" parent="540" name="musical_info_id">
+      <Comment>뮤지컬 ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>9</Position>
+    </column>
+    <foreign-key id="745" parent="540" name="fk_performance_musical">
+      <ColNames>musical_info_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <index id="746" parent="540" name="PRIMARY">
+      <ColNames>performance_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="747" parent="540" name="fk_performance_musical">
+      <ColNames>musical_info_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="748" parent="540" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="749" parent="541" name="recommended_musical_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>추천뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="750" parent="541" name="title">
+      <Comment>뮤지컬제목</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="751" parent="541" name="content">
+      <Comment>뮤지컬내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="752" parent="541" name="created_at">
+      <Comment>뮤지컬추천작성일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="753" parent="541" name="updated_at">
+      <Comment>뮤지컬추천수정일자</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="754" parent="541" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="755" parent="541" name="fk_recommended_musical_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="756" parent="541" name="PRIMARY">
+      <ColNames>recommended_musical_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="757" parent="541" name="fk_recommended_musical_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="758" parent="541" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="759" parent="542" name="review_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>리뷰ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="760" parent="542" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="761" parent="542" name="created_at">
+      <Comment>작성 시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="762" parent="542" name="updated_at">
+      <Comment>수정 시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="763" parent="542" name="like">
+      <Comment>리뷰 좋아요</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="764" parent="542" name="comments">
+      <Comment>댓글수</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="765" parent="542" name="musical_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="766" parent="542" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="767" parent="542" name="active_status">
+      <Comment>활성화 여부</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <foreign-key id="768" parent="542" name="fk_review_musical">
+      <ColNames>musical_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <foreign-key id="769" parent="542" name="fk_review_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="770" parent="542" name="PRIMARY">
+      <ColNames>review_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="771" parent="542" name="fk_review_musical">
+      <ColNames>musical_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="772" parent="542" name="fk_review_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="773" parent="542" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="774" parent="543" name="review_comment_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>리뷰댓글ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="775" parent="543" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="776" parent="543" name="created_at">
+      <Comment>작성 시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="777" parent="543" name="updated_at">
+      <Comment>수정 시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="778" parent="543" name="active_status">
+      <Comment>활성화 여부</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="779" parent="543" name="replys">
+      <DasType>bigint(20)|0s</DasType>
+      <DefaultExpression>1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="780" parent="543" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="781" parent="543" name="review_id">
+      <Comment>리뷰ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="782" parent="543" name="fk_review_comment_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <foreign-key id="783" parent="543" name="fk_review_comment_review">
+      <ColNames>review_id</ColNames>
+      <RefColNames>review_id</RefColNames>
+      <RefTableName>tbl_review</RefTableName>
+    </foreign-key>
+    <index id="784" parent="543" name="PRIMARY">
+      <ColNames>review_comment_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="785" parent="543" name="fk_review_comment_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="786" parent="543" name="fk_review_comment_review">
+      <ColNames>review_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="787" parent="543" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="788" parent="544" name="review_id">
+      <Comment>리뷰ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="789" parent="544" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="790" parent="544" name="fk_review_like_review">
+      <ColNames>review_id</ColNames>
+      <RefColNames>review_id</RefColNames>
+      <RefTableName>tbl_review</RefTableName>
+    </foreign-key>
+    <foreign-key id="791" parent="544" name="fk_review_like_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="792" parent="544" name="PRIMARY">
+      <ColNames>review_id
+user_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="793" parent="544" name="fk_review_like_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="794" parent="544" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="795" parent="545" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="796" parent="545" name="musical_info_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="797" parent="545" name="scope">
+      <Comment>별점</Comment>
+      <DasType>tinyint(4)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="798" parent="545" name="created_at">
+      <Comment>별점 작성시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="799" parent="545" name="updated_at">
+      <Comment>별점 수정시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="800" parent="545" name="user_nickname">
+      <Comment>유저닉네임</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="801" parent="545" name="fk_scope_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <foreign-key id="802" parent="545" name="fk_scope_musical">
+      <ColNames>musical_info_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <index id="803" parent="545" name="PRIMARY">
+      <ColNames>user_id
+musical_info_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="804" parent="545" name="fk_scope_musical">
+      <ColNames>musical_info_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="805" parent="545" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="806" parent="546" name="secret_review_id">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>비밀리뷰ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="807" parent="546" name="content">
+      <Comment>내용</Comment>
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="808" parent="546" name="created_at">
+      <Comment>작성 시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="809" parent="546" name="updated_at">
+      <Comment>수정 시각</Comment>
+      <DasType>timestamp|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="810" parent="546" name="active_status">
+      <Comment>활성화 여부</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="811" parent="546" name="musical_id">
+      <Comment>뮤지컬ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="812" parent="546" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="813" parent="546" name="fk_secret_review_musical">
+      <ColNames>musical_id</ColNames>
+      <RefColNames>musical_info_id</RefColNames>
+      <RefTableName>tbl_musical_info</RefTableName>
+    </foreign-key>
+    <foreign-key id="814" parent="546" name="fk_secret_review_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="815" parent="546" name="PRIMARY">
+      <ColNames>secret_review_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="816" parent="546" name="fk_secret_review_musical">
+      <ColNames>musical_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="817" parent="546" name="fk_secret_review_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="818" parent="546" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <check id="819" parent="547" name="accept_status">
       <ColNames>accept_status</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Predicate>`accept_status` in (&apos;Y&apos;,&apos;N&apos;)</Predicate>
     </check>
-    <check id="525" parent="523" name="signup_path">
+    <check id="820" parent="547" name="signup_path">
       <ColNames>signup_path</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Predicate>`signup_path` in (&apos;KAKAO&apos;,&apos;NAVER&apos;,&apos;GOOGLE&apos;,&apos;NORMAL&apos;)</Predicate>
     </check>
-    <check id="526" parent="523" name="user_status">
+    <check id="821" parent="547" name="user_status">
       <ColNames>user_status</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Predicate>`user_status` in (&apos;ACTIVE&apos;,&apos;INACTIVE&apos;)</Predicate>
     </check>
-    <column id="527" parent="523" name="user_id">
+    <column id="822" parent="547" name="user_id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="528" parent="523" name="user_auth_id">
+    <column id="823" parent="547" name="user_auth_id">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="529" parent="523" name="user_name">
+    <column id="824" parent="547" name="user_name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="530" parent="523" name="password">
+    <column id="825" parent="547" name="password">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="531" parent="523" name="nickname">
+    <column id="826" parent="547" name="nickname">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="532" parent="523" name="email">
+    <column id="827" parent="547" name="email">
       <DasType>varchar(255)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="533" parent="523" name="user_status">
+    <column id="828" parent="547" name="user_status">
       <DasType>varchar(255)|0s</DasType>
       <DefaultExpression>&apos;ACTIVE&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="534" parent="523" name="created_at">
+    <column id="829" parent="547" name="created_at">
       <DasType>timestamp|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="535" parent="523" name="withdrawn_at">
+    <column id="830" parent="547" name="withdrawn_at">
       <DasType>timestamp|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="536" parent="523" name="profile_image">
+    <column id="831" parent="547" name="profile_image">
       <DasType>text|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="537" parent="523" name="accept_status">
+    <column id="832" parent="547" name="accept_status">
       <DasType>varchar(255)|0s</DasType>
       <DefaultExpression>&apos;N&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <column id="538" parent="523" name="signup_path">
+    <column id="833" parent="547" name="signup_path">
       <DasType>varchar(255)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="539" parent="523" name="user_identifier">
+    <column id="834" parent="547" name="user_identifier">
       <DasType>varchar(511)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>13</Position>
     </column>
-    <column id="540" parent="523" name="user_role">
+    <column id="835" parent="547" name="user_role">
       <DasType>varchar(256)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>14</Position>
     </column>
-    <index id="541" parent="523" name="PRIMARY">
+    <index id="836" parent="547" name="PRIMARY">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="542" parent="523" name="unique_user_identifier">
+    <index id="837" parent="547" name="unique_user_identifier">
       <ColNames>user_identifier</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="543" parent="523" name="PRIMARY">
+    <key id="838" parent="547" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="544" parent="523" name="unique_user_identifier">
+    <key id="839" parent="547" name="unique_user_identifier">
       <UnderlyingIndexName>unique_user_identifier</UnderlyingIndexName>
+    </key>
+    <column id="840" parent="548" name="custom_ticket_id">
+      <Comment>커스텀티켓ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="841" parent="548" name="user_id">
+      <Comment>회원ID</Comment>
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="842" parent="548" name="photo_url">
+      <Comment>티켓사진</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="843" parent="548" name="ticekt_attriburters">
+      <Comment>티켓속성</Comment>
+      <DasType>varchar(1023)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="844" parent="548" name="fk_user_custom_ticket_ticket">
+      <ColNames>custom_ticket_id</ColNames>
+      <RefColNames>custom_ticket_id</RefColNames>
+      <RefTableName>tbl_custom_ticket</RefTableName>
+    </foreign-key>
+    <foreign-key id="845" parent="548" name="fk_user_custom_ticket_user">
+      <ColNames>user_id</ColNames>
+      <RefColNames>user_id</RefColNames>
+      <RefTableName>tbl_user</RefTableName>
+    </foreign-key>
+    <index id="846" parent="548" name="PRIMARY">
+      <ColNames>custom_ticket_id
+user_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="847" parent="548" name="fk_user_custom_ticket_user">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="848" parent="548" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
