@@ -1,11 +1,13 @@
-INSERT INTO tbl_user (user_name, password, nickname, email, profile_image, created_at, signup_path, user_identifier, user_auth_id, user_role)
+use mudiumdb;
+INSERT INTO tbl_user (user_name, password, nickname, email, profile_image, created_at, signup_path, user_identifier,  user_role)
 VALUES
-    ('김슈슈', 'pw1234', 'shushu_ping', 'siusiu@example.com', NULL, '2023-08-01 10:30:00', 'NORMAL', CONCAT('NORMAL_', 'siusiu_ping'), 'siusiu_ping','ROLE_MEMBER'),  -- user_identifier는 'NORMAL_alice123', user_auth_id는 사용자가 입력한 ID
-    ('이효효', NULL, 'hyohyo', 'jinyjin@example.com', NULL, '2023-08-02 11:45:00', 'NAVER', CONCAT('NAVER_', '987654321'), '987654321','ROLE_MEMBER'),  -- user_identifier는 'NAVER_987654321', user_auth_id는 네이버의 고유번호 예시
-    ('김서서', NULL, 'seoseo', 'hyunhyun@example.com', NULL, '2023-08-03 12:00:00', 'GOOGLE', CONCAT('GOOGLE_', 'abc123xyz'), 'abc123xyz','ROLE_ADMIN'),  -- user_identifier는 'GOOGLE_abc123xyz', user_auth_id는 구글의 고유번호 예시
-    ('이우우', 'password123', 'woowoo', 'woowoo@example.com', NULL, '2023-08-04 09:15:00', 'NORMAL', CONCAT('NORMAL_', 'woowoo'), 'woowoo','ROLE_MEMBER'),  -- user_identifier는 'NORMAL_diana789', user_auth_id는 사용자가 입력한 ID
-    ('김도옹', 'pwpw321','do_ong','doong@example.com',NULL, '2023-08-01 09:15:00','NORMAL',CONCAT('NORMAL_','do_ong'),'do-ong','ROLE_MEMBER'),
-    ('김모모', NULL, 'momo-ping', 'momo_ping@example.com', NULL, '2023-08-05 14:20:00', 'KAKAO', CONCAT('KAKAO_', 'kakao98765'), 'kakao98765','ROLE_MEMBER');  -- user_identifier는 'KAKAO_kakao98765', user_auth_id는 카카오의 고유번호 예시
+    ('김슈슈', 'pw1234', 'shushu_ping', 'siusiu@example.com', NULL, '2023-08-01 10:30:00', 'NORMAL', CONCAT('NORMAL_', 'siusiu_ping'),'ROLE_MEMBER'),  -- user_identifier는 'NORMAL_alice123', user_auth_id는 사용자가 입력한 ID
+    ('이효효', NULL, 'hyohyo', 'jinyjin@example.com', NULL, '2023-08-02 11:45:00', 'NAVER', CONCAT('NAVER_', '987654321'),'ROLE_MEMBER'),  -- user_identifier는 'NAVER_987654321', user_auth_id는 네이버의 고유번호 예시
+    ('김서서', NULL, 'seoseo', 'hyunhyun@example.com', NULL, '2023-08-03 12:00:00', 'GOOGLE', CONCAT('GOOGLE_', 'abc123xyz'),'ROLE_ADMIN'),  -- user_identifier는 'GOOGLE_abc123xyz', user_auth_id는 구글의 고유번호 예시
+    ('이우우', 'password123', 'woowoo', 'woowoo@example.com', NULL, '2023-08-04 09:15:00', 'NORMAL', CONCAT('NORMAL_', 'woowoo'),'ROLE_MEMBER'),  -- user_identifier는 'NORMAL_diana789', user_auth_id는 사용자가 입력한 ID
+    ('김도옹', 'pwpw321','do_ong','doong@example.com',NULL, '2023-08-01 09:15:00','NORMAL',CONCAT('NORMAL_','do_ong'),'ROLE_MEMBER'),
+    ('김모모', NULL, 'momo-ping', 'momo_ping@example.com', NULL, '2023-08-05 14:20:00', 'KAKAO', CONCAT('KAKAO_', 'kakao98765'),'ROLE_MEMBER');  -- user_identifier는 'KAKAO_kakao98765', user_auth_id는 카카오의 고유번호 예시
+
 INSERT INTO `TBL_BOARD` (`board_id`, `title`, `content`, `created_at`, `updated_at`, `view_count`, `board_like`, `active_status`, `user_id`)
 VALUES
     (1, 'Street little anyone owner.', 'Available bit hear someone. Along southern economic available talk.', '2023-10-19 03:27:14', '2024-01-02 03:27:14', 333, 7, 'INACTIVE', 3),
@@ -42,7 +44,7 @@ VALUES
     (32, 'Test mouth someone far machine.', 'Thus body case ability imagine. Draw current help here.', '2024-04-07 03:27:14', '2024-05-12 03:27:14', 621, 38, 'ACTIVE', 5),
     (33, 'Seek job card stay bad.', 'Machine region early discuss public success hear final.', '2024-06-21 03:27:14', NULL, 955, 64, 'ACTIVE', 3),
     (34, 'Prepare development beyond person.', 'Add create allow official maybe opportunity.', '2023-11-27 03:27:14', '2024-01-11 03:27:14', 703, 45, 'ACTIVE', 4),
-    (35, 'Left along every concern.', 'Manager bit present work state institution nature reason.', '2024-08-27 03:27:14', NULL, 182, 20, 'ACTIVE', 1)
+    (35, 'Left along every concern.', 'Manager bit present work state institution nature reason.', '2024-08-27 03:27:14', NULL, 182, 20, 'ACTIVE', 1);
 
 INSERT INTO `TBL_MUSICAL_INFO` (`title`, `image_url`, `rating`, `view_count`, `review_video`) VALUES
 ('잠자는 숲속의 공주', 'http://www.kopis.or.kr/upload/pfmPoster/PF_PF239321_240416_114951.JPG', '전체 관람가', 1500, 'https://www.youtube.com/watch?v=dummy1'),
@@ -140,50 +142,7 @@ INSERT INTO `TBL_REVIEW` (`content`, `created_at`, `updated_at`, `like`, `musica
 ('생생한 무대 연출이 인상적이었어요.', '2023-09-18 16:20:00', NULL, 105, 8, 6, 'ACTIVE'),
 ('어린이들에게 좋은 교육적인 내용이 많아요.', '2023-09-19 17:30:00', NULL, 85, 9, 1, 'ACTIVE'),
 ('다소 아쉬운 부분도 있었지만 전체적으로 만족합니다.', '2023-09-20 18:40:00', NULL, 65, 10, 2, 'ACTIVE');
-INSERT INTO TBL_SCOPE (user_id, musical_info_id, scope, created_at, updated_at, user_nickname) VALUES
-(1, 10, 3.5, '2023-11-28 23:12:08', '2024-05-08 15:45:40', 'shushu_ping'),
-(2, 10, 4.0, '2024-09-02 03:33:59', NULL, 'hyohyo'),
-(3, 11, 2.5, '2023-11-19 17:09:33', '2024-07-13 16:44:57', 'seoseo'),
-(4, 12, 4.5, '2024-08-31 15:56:18', NULL, 'woowoo'),
-(5, 13, 1.0, '2024-04-17 01:15:33', '2024-09-21 05:25:48', 'do_ong'),
-(6, 14, 2.0, '2023-12-20 08:45:10', '2024-03-12 22:11:45', 'momo-ping'),
-(1, 15, 5.0, '2024-02-10 19:09:50', '2024-09-14 10:25:50', 'shushu_ping'),
-(2, 16, 4.5, '2024-05-22 12:44:33', NULL, 'hyohyo'),
-(3, 17, 1.5, '2023-09-11 14:22:55', '2023-12-14 08:45:10', 'seoseo'),
-(4, 18, 3.0, '2023-10-13 16:33:22', '2024-08-25 06:11:30', 'woowoo'),
-(5, 19, 2.0, '2024-01-09 22:05:11', NULL, 'do_ong'),
-(6, 20, 3.5, '2024-03-18 04:18:00', '2024-05-29 15:10:23', 'momo-ping'),
-(1, 21, 5.0, '2023-08-11 10:10:40', '2024-06-22 12:05:55', 'shushu_ping'),
-(2, 22, 2.5, '2024-07-08 11:05:59', '2024-09-10 03:13:22', 'hyohyo'),
-(3, 23, 4.0, '2023-09-14 09:25:40', NULL, 'seoseo'),
-(4, 24, 3.5, '2023-12-25 13:35:11', '2024-01-10 19:00:55', 'woowoo'),
-(5, 25, 1.5, '2024-05-12 15:09:44', NULL, 'do_ong'),
-(6, 26, 4.0, '2023-08-29 08:44:33', '2024-03-15 11:50:21', 'momo-ping'),
-(1, 27, 5.0, '2023-10-02 22:55:20', '2024-02-25 18:45:12', 'shushu_ping'),
-(2, 28, 2.5, '2024-06-17 21:10:39', NULL, 'hyohyo'),
-(3, 29, 3.0, '2024-01-11 14:22:15', '2024-07-05 09:33:22', 'seoseo'),
-(4, 30, 4.5, '2023-11-05 18:25:10', NULL, 'woowoo'),
-(5, 10, 2.0, '2023-10-21 09:19:22', '2024-06-13 12:45:55', 'do_ong'),
-(6, 11, 5.0, '2024-04-01 23:11:40', '2024-09-11 04:10:11', 'momo-ping'),
-(1, 12, 3.5, '2023-09-18 05:14:33', NULL, 'shushu_ping'),
-(2, 13, 4.0, '2024-03-22 03:15:59', '2024-07-29 20:30:33', 'hyohyo'),
-(3, 14, 1.0, '2024-06-25 07:08:11', NULL, 'seoseo'),
-(4, 15, 2.5, '2023-08-08 17:33:50', '2024-05-22 11:19:10', 'woowoo'),
-(5, 16, 3.0, '2024-01-27 13:29:05', '2024-09-13 12:00:00', 'do_ong'),
-(6, 17, 4.5, '2023-11-12 09:21:22', NULL, 'momo-ping'),
-(1, 18, 2.0, '2024-08-01 10:15:45', '2024-09-20 22:11:55', 'shushu_ping'),
-(2, 19, 4.0, '2024-07-04 04:44:55', NULL, 'hyohyo'),
-(3, 20, 5.0, '2023-09-03 11:05:33', '2024-04-14 16:22:20', 'seoseo'),
-(4, 21, 2.5, '2024-02-19 09:33:10', '2024-09-09 18:00:00', 'woowoo'),
-(5, 22, 3.0, '2024-06-30 05:29:19', NULL, 'do_ong'),
-(6, 23, 1.5, '2023-12-15 14:30:33', '2024-02-11 11:44:12', 'momo-ping'),
-(1, 24, 2.4, '2024-06-26 17:44:59', NULL, 'shushu_ping'),
-(2, 25, 3.6, '2024-09-30 18:03:48', NULL, 'hyohyo'),
-(3, 26, 4.2, '2024-01-04 07:02:01', NULL, 'seoseo'),
-(4, 27, 2.9, '2024-05-16 19:58:11', NULL, 'woowoo'),
-(5, 28, 3.8, '2024-02-26 17:52:05', NULL, 'do_ong'),
-(6, 29, 4.7, '2024-01-27 16:44:22', '2024-07-09 05:58:03', 'momo-ping'),
-(1, 30, 2.5, '2024-04-06 23:46:14', '2024-07-01 18:11:22', 'shushu_ping');
+
 INSERT INTO `TBL_SECRET_REVIEW` (`content`, `created_at`, `updated_at`, `active_status`, `musical_id`, `user_id`) VALUES
 ('훌륭한 공연이었어요. 음악과 무대가 정말 멋졌어요!', '2023-08-01 12:00:00', NULL, 'ACTIVE', 1, 1),
 ('생각보다 지루했어요. 그래도 배우들의 연기는 좋았어요.', '2023-08-02 13:00:00', NULL, 'ACTIVE', 2, 2),
