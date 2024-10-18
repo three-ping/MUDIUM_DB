@@ -14,6 +14,7 @@ DROP TABLE IF EXISTS `TBL_BOARD_LIKE`;
 DROP TABLE IF EXISTS `TBL_BOARD_COMMENT`;
 DROP TABLE IF EXISTS `TBL_SCOPE`;
 DROP TABLE IF EXISTS `TBL_REVIEW`;
+DROP TABLE IF EXISTS `TBL_PERFORMANCE_RANK`;
 DROP TABLE IF EXISTS `TBL_PERFORMANCE`;
 DROP TABLE IF EXISTS `TBL_RECOMMENDED_MUSICAL`;
 DROP TABLE IF EXISTS `TBL_ETIQUETTE`;
@@ -362,3 +363,16 @@ CREATE TABLE `TBL_USER_CUSTOM_TICKET`
     CONSTRAINT fk_user_custom_ticket_ticket FOREIGN KEY (`custom_ticket_id`) REFERENCES `TBL_CUSTOM_TICKET` (`custom_ticket_id`),
     CONSTRAINT fk_user_custom_ticket_user FOREIGN KEY (`user_id`) REFERENCES `TBL_USER` (`user_id`)
 ) COMMENT = '회원커스텀티켓';
+
+CREATE TABLE TBL_PERFORMANCE_RANK (
+                                      performance_rank_id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT '순위ID',
+                                      start_date TIMESTAMP NOT NULL COMMENT '한달전날짜',
+                                      end_date TIMESTAMP NOT NULL COMMENT '조회날짜',
+                                      rank_type VARCHAR(255) NOT NULL COMMENT '순위유형',
+                                      rank INT NOT NULL COMMENT '순위',
+                                      musical_id BIGINT NOT NULL COMMENT '작품ID',
+                                      performance_id BIGINT NOT NULL COMMENT '공연ID',
+                                      FOREIGN KEY (musical_id) REFERENCES TBL_MUSICAL_INFO(musical_info_id),
+                                      FOREIGN KEY (performance_id) REFERENCES TBL_PERFORMANCE(performance_id),
+                                      UNIQUE (start_date, end_date, rank_type, rank)
+);
