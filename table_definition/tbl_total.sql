@@ -52,7 +52,7 @@ CREATE TABLE `TBL_MUSICAL_INFO`
     `title`           VARCHAR(1023) NOT NULL COMMENT '뮤지컬제목',
     `image_url`       VARCHAR(1023) COMMENT '포스터',
     `rating`          VARCHAR(255)  COMMENT '관람등급',
-    `view_count`      BIGINT    COMMENT '조회 수',
+    `view_count`      BIGINT  DEFAULT 0  COMMENT '조회 수',
     `review_video`    TEXT COMMENT '리뷰 영상',
     `production`      VARCHAR(255)  COMMENT '제작사',
     `synopsys`        TEXT COMMENT '시놉시스',
