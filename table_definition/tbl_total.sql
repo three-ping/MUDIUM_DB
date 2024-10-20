@@ -59,15 +59,17 @@ CREATE TABLE `TBL_MUSICAL_INFO`
     PRIMARY KEY (`musical_info_id`)
 ) COMMENT = '뮤지컬 정보';
 
-CREATE TABLE `TBL_CUSTOM_TICKET`
-(
-    `custom_ticket_id` BIGINT        NOT NULL AUTO_INCREMENT COMMENT '커스텀티켓ID',
-    `ticket_image`     VARCHAR(1023) NOT NULL COMMENT '티켓이미지',
-    `theme_name`       VARCHAR(1023) NOT NULL COMMENT '테마이름',
-    `musical_info_id`  BIGINT COMMENT '뮤지컬ID',
-    PRIMARY KEY (`custom_ticket_id`),
-    CONSTRAINT fk_custom_ticket_musical FOREIGN KEY (`musical_info_id`) REFERENCES `TBL_MUSICAL_INFO` (`musical_info_id`)
-) COMMENT = '커스텀티켓';
+CREATE TABLE tbl_custom_ticket (
+    custom_ticket_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    ticket_image LONGTEXT, 
+    hologram_color1 VARCHAR(255), 
+    hologram_color2 VARCHAR(255),  
+    comment VARCHAR(500),  
+    user_id BIGINT NOT NULL,  
+
+    CONSTRAINT FK_user_customticket FOREIGN KEY (user_id) REFERENCES tbl_user(user_id)
+);
+
 
 CREATE TABLE `TBL_BOARD`
 (
