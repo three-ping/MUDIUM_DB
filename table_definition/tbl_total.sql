@@ -353,17 +353,6 @@ CREATE TABLE `TBL_SECRET_REVIEW`
     CONSTRAINT fk_secret_review_user FOREIGN KEY (`user_id`) REFERENCES `TBL_USER` (`user_id`)
 ) COMMENT = '비밀리뷰';
 
-CREATE TABLE `TBL_USER_CUSTOM_TICKET`
-(
-    `custom_ticket_id`    BIGINT        NOT NULL COMMENT '커스텀티켓ID',
-    `user_id`             BIGINT        NOT NULL COMMENT '회원ID',
-    `photo_url`           VARCHAR(1023) NOT NULL COMMENT '티켓사진',
-    `ticekt_attriburters` VARCHAR(1023) NOT NULL COMMENT '티켓속성',
-    PRIMARY KEY (`custom_ticket_id`, `user_id`),
-    CONSTRAINT fk_user_custom_ticket_ticket FOREIGN KEY (`custom_ticket_id`) REFERENCES `TBL_CUSTOM_TICKET` (`custom_ticket_id`),
-    CONSTRAINT fk_user_custom_ticket_user FOREIGN KEY (`user_id`) REFERENCES `TBL_USER` (`user_id`)
-) COMMENT = '회원커스텀티켓';
-
 CREATE TABLE TBL_PERFORMANCE_RANK (
                                       performance_rank_id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT '순위ID',
                                       start_date TIMESTAMP NOT NULL COMMENT '한달전날짜',
